@@ -8,8 +8,6 @@ import { FlashMessagesModule } from 'angular2-flash-messages';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
-import { ChangeTextDirective } from './change-text.directive';
-import { DebounceClickDirective } from './debounce-click.directive';
 import { UserService } from './services/user.service';
 import { HttpClientModule } from '@angular/common/http';
 import { AdduserComponent } from './components/adduser/adduser.component';
@@ -21,8 +19,6 @@ import { UpdateuserComponent } from './components/updateuser/updateuser.componen
     AppComponent,
     NavbarComponent,
     DashboardComponent,
-    ChangeTextDirective,
-    DebounceClickDirective,
     AdduserComponent,
     UpdateuserComponent
   ],
