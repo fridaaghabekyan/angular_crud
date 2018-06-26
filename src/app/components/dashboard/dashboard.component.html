@@ -1,0 +1,29 @@
+<div class="container" > 
+  <div class="row"> 
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Email</th>
+        <th scope="col">Delete</th>
+        <th scope="col">Update</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users">
+        <td > {{ user.id }} </td>
+        <td > {{ user.name }} </td>
+        <td > {{ user.lname }} </td>
+        <td > {{ user.email }} </td>
+        <td (click)="deleteUser(user.id)"><span class="glyphicon glyphicon-remove"></span> </td>
+        <td><span class="glyphicon glyphicon-cog" (click)="updateUser(user)" ></span></td>
+      </tr>
+      
+    </tbody>
+  </table>
+  <br><br>
+  <button routerLink="/adduser" class="btn btn-primary col-md-offset-5 col-xs-offset-5 col-lg-offset-5">Add User</button>
+  </div>
+  </div>
